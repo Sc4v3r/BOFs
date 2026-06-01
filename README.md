@@ -22,8 +22,12 @@ Realistically, this could be compressed into a helper script, but those steps we
 |adv_audit_policies | adv_audit_policies| Retrieve advanced security audit policies|
 |arp | arp| List ARP table|
 |cacls|cacls [filepath]| List user permissions for the specified file, wildcards supported|
+|cloud_token_harvest| cloud_token_harvest| Hunt for cloud tokens in OneDrive, Teams, Browser, and Office WAM caches|
+|cloud_token_stage| cloud_token_stage| Stage cloud token files (Teams, Edge, Chrome, TokenBroker, Credentials, OneDrive) to %TEMP%\CloudTokenStage for exfiltration|
 |dir| dir [directory] [/s]| List files in a directory. Supports wildcards (e.g. "C:\Windows\S*") unlike the CobaltStrike `ls` command|
 |driversigs| driversigs| Enumerate installed services Imagepaths to check the signing cert against known AV/EDR vendors|
+|dsregcmd_status| dsregcmd_status| Execute dsregcmd /status via anonymous pipe to determine AAD join / Hybrid state|
+|entra_session_info| entra_session_info| Enumerate EntraID session info, cloud app footprint, PRT, and subscriptions for the current user|
 |enum_filter_driver| enum_filter_driver [opt:computer]| Enumerate filter drivers|
 |enumLocalSessions| enumLocalSessions| Enumerate currently attached user sessions both local and over RDP|
 |env| env| List process environment variables|
