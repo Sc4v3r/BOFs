@@ -1,3 +1,16 @@
+Added a few BOFs:
+   ┌─────────────────────┬──────────────────────────────────────────────────────────────────────────────────┐                                                                                
+   │ Command             │ Description                                                                      │                                                                                
+   ├─────────────────────┼──────────────────────────────────────────────────────────────────────────────────┤                                                                                
+   │ cloud_token_harvest │ Hunt for cloud tokens in OneDrive, Teams, Browser, and Office WAM caches         │                                                                                
+   ├─────────────────────┼──────────────────────────────────────────────────────────────────────────────────┤                                                                                
+   │ cloud_token_stage   │ Stage cloud token files to %TEMP%\CloudTokenStage for exfiltration               │                                                                                
+   ├─────────────────────┼──────────────────────────────────────────────────────────────────────────────────┤                                                                                
+   │ dsregcmd_status     │ Execute dsregcmd /status via anonymous pipe to determine AAD join / Hybrid state │                                                                                
+   ├─────────────────────┼──────────────────────────────────────────────────────────────────────────────────┤                                                                                
+   │ entra_session_info  │ Enumerate EntraID session info, cloud app footprint, PRT, and subscriptions      │                                                                                
+   └─────────────────────┴──────────────────────────────────────────────────────────────────────────────────┘      
+
 # Situational Awareness BOF
 This repo intends to serve two purposes.  First it provides a nice set of basic situational awareness commands implemented in a Beacon Object File (BOF).  This allows you to perform some checks on a host before you begin executing commands that may be more invasive.
 
